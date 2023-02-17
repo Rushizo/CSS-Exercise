@@ -1,0 +1,21 @@
+article{
+    border: 1px solid gray;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+#box{
+    margin: 10px;
+}
+
+#box > #links{
+    margin: 10px ;
+    margin-left: 0px;
+}
+
+#box > #links > a{
+    margin: 10px;
+    margin-left: 0px;
+}
