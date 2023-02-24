@@ -1,0 +1,54 @@
+.sidebar{
+    display: flex;
+    width: 200px;
+    height: 100vh;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lightgray;
+    flex-direction: column;
+}
+
+.sidebar .logo{
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.sidebar .navigationLinks{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 25px;
+    flex: 1;
+    
+    
+}
+
+.sidebar .navigationLinks > a{
+    color: #2b2b2b;
+    text-decoration: none;
+    margin: 5px;
+
+}
+
+.sidebar .navigationLinks > a:hover{
+    color: #2b2bb2;
+    transition: 0.3s;
+}
+
+.sidebar .username-avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+
+.sidebar .username-avatar .avatar{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
