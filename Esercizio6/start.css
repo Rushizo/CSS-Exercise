@@ -1,0 +1,28 @@
+.box{  
+    display: grid;
+    grid-template-columns: 3; 
+    grid-template-rows: 3;
+    
+}
+
+#green{
+    grid-column: span 3;
+}
+
+#orange{
+    grid-row-start: 3;
+    grid-column: span 2;
+
+}
+
+#blue{
+    grid-row: span 3;
+}
+
+
+#red > ul, #yellow > ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
