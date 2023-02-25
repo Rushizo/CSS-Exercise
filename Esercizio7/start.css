@@ -1,0 +1,25 @@
+.box{
+    display: flex;
+    
+}
+
+#green{
+    order: 3;
+}
+
+#yellow{
+    order: 1;
+}
+
+#red{
+    order: 2;
+}
+
+#orange{
+    order: 4;
+    flex-grow: 1;
+}
+
+#blue{
+    order: 5;
+}
