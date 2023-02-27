@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    margin: 20px;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: rgba(179, 174, 174, 0.6);
+    box-shadow: 5px 5px gray;
+}
+
+/* HEAD */
+
+.card .card-head{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.card-head .card-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: white;
+}
+
+.card-head .card-username-date{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.card-username-date h3{
+    font-weight: 20;
+}
+
+.card-username-date p{
+    color: white;
+    font-weight: 10;
+}
+
+.card-head .menu{
+    width: 50px;
+    height: 50px;
+    background-image: url(./assets/658625-200.png);
+    background-size: cover;
+}   
+
+/* CARD BODY */
+
+.card .card-body{
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+}
+
+.image-1{
+    background-image: url(./assets/image_7867e-Cats.jpg);
+}
+
+.image-2{
+    background-image: url(./assets/pexels-pixabay-45201.jpg);;
+}
+
+.image-3{
+    background-image: url(./assets/file-20230127-16-q3bhc2.avif);
+}
+
+/* CARD FOOTER */
+
+.card-footer{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer .card-button{
+    height: 28px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-button .card-like-button, .card-comment-button{
+    width: 27px;
+    height: 100%;
+    background-size: contain;
+    margin-left: 10px;
+}
+
+.card-button .card-like-button{
+    background-image: url(./assets/free-heart-icon-3510-thumb.png);
+}
+
+.card-button .card-comment-button{
+    background-image: url(./assets/5338282.png);
+}
+
+.card-comment p{
+    word-spacing: 5px;
+    
+}
+
+.card-footer .card-comment p::before{
+    content: "gatto: ";
+    font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 768px){
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 375px){
+    main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
